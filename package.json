@@ -1,0 +1,36 @@
+{
+  "name": "cgi-cofing4fun",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "main": "src/index.js",
+  "dependencies": {
+    "@material-ui/core": "4.12.3",
+    "@material-ui/icons": "4.11.2",
+    "autoprefixer": "10.4.0",
+    "daisyui": "1.25.2",
+    "live-server": "1.2.1",
+    "local-storage": "2.0.0",
+    "moment": "2.27.0",
+    "postcss": "8.4.0",
+    "react": "16.8.6",
+    "react-dom": "16.8.6",
+    "react-dropdown": "1.7.0",
+    "react-scripts": "3.0.1",
+    "tailwindcss": "2.2.19"
+  },
+  "devDependencies": {
+    "typescript": "3.3.3"
+  },
+  "scripts": {
+    "start": "nodemon src/index.js",
+    "watch": "live-server src/ --no-css-inject & nodemon --watch 'src/**/*.html' -e html --exec 'yarn build:css'",
+    "build:css": "postcss src/index.css -o src/build/index.css"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
